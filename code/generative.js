@@ -328,7 +328,7 @@ function generateTetures()
         //drawLittleJSSign();
         setupContext(4,2);
         //drawHarrisSign();
-        drawDoubleLineSign('HARRIS','WALZ',hsl(.6,.9,.3));
+        drawDoubleLineSign('This is','a sign',hsl(.6,.9,.3));
         setupContext(5,2);
         drawOPSign();
         //drawGenericSign('VOTE',.5,WHITE,hsl(0,.9,.4),hsl(.6,.9,.3),0,'impact');
@@ -991,15 +991,7 @@ function generateTetures()
         color(hsl(.96,1,.5),1);
         text(t,x+2*o,y-2*o,.55,.8,.05);
     }
-
-    function drawHarrisSign()
-    {
-        const c = hsl(.6,.9,.3)
-        drawSignBackground(1,.6,c,WHITE,.05,BLACK,.5);
-        color(WHITE,1);
-        text('HARRIS',.5,.24,.31,.85,.01);
-        text('WALZ',.5,.46,.2,.8,.01);
-    }
+    
     function drawDoubleLineSign(t1,t2,c,legSeparation=.5,y1=.24,y2=.46)
     {
         drawSignBackground(1,.6,c,WHITE,.05,BLACK,legSeparation);
